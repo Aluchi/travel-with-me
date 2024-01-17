@@ -17,10 +17,10 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Privacy</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="blog.php">Blog</a></li>
+                    <li><a href="privacy.php">Privacy</a></li>
                 </ul>
             </nav>
 
