@@ -125,12 +125,33 @@ header.down ul li a{
 
 .grid-aside-container .sidebar {
 	grid-column: 3 / 4;
-	background: #fAA43D;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    border: 2px solid #e2e2e2;
 	min-height: 100px;
+}
+
+.sidebar-horizontal-card {
+    width: 100%;
+    display: flex;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e2e2e2;
+}
+.sidebar-horizontal-card:last-child {
+    width: 100%;
+    display: flex;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+.sidebar-horizontal-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.sidebar-recent-uploads .sidebar-recent-uploads-text {
+    
 }
 
 
@@ -373,15 +394,15 @@ footer {
     background-color: #111;
 }
 
-.footer-container{
+footer .footer-container{
     width: 100%;
     padding: 70px 30px 20px;
 }
-.social-icons {
+footer .footer-container .social-icons {
     display: flex;
     justify-content: center;
 }
-.social-icons a{
+footer .footer-container .social-icons a{
     text-decoration: none;
     padding: 10px;
     background-color: var(--white);
@@ -390,7 +411,7 @@ footer {
     
     transition: 0.5s;
 }
-.social-icons a i{
+footer .footer-container .social-icons a i{
     font-size: 2em;
     color: #000000;
     opacity: 0.9;
@@ -398,44 +419,44 @@ footer {
 
 /* Hover effects on social media icons*/
 
-.social-icons a:hover {
+footer .footer-container .social-icons a:hover {
     background-color: #111;
 }
 
-.social-icons a:hover i {
+footer .footer-container .social-icons a:hover i {
     color: var(--white);
     transition: 0.5s;
 }
 
-.footer-nav {
+footer .footer-container .footer-nav {
     margin: 30px 0;
 }
 
-.footer-nav ul {
+footer .footer-container .footer-nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
-.footer-nav ul li a {
+footer .footer-container .footer-nav ul li a {
     color: var(--white);
     margin: 20px;
     text-decoration: none;
     opacity: 0.7;
     transition: 0.5s;
 }
-.footer-nav ul li a:hover {
+footer .footer-container .footer-nav ul li a:hover {
     opacity: 1;
 }
 
-.footer-bottom {
+footer .footer-bottom {
     background-color: #000000;
     padding: 20px;
     text-align: center;
 }
-.footer-bottom p {
+footer .footer-bottom p {
     color: var(--white);
 }
-.designer {
+footer .footer-bottom span.designer {
     opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -446,10 +467,10 @@ footer {
 
 
 @media screen and (max-width: 700px) {
-    .footer-nav ul {
+    footer .footer-container .footer-nav ul {
         flex-direction: column;
     }
-    .footer-nav ul li {
+    footer .footer-container .footer-nav ul li {
         width: 100%;
         text-align: center;
         margin: 10px;

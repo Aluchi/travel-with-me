@@ -7,8 +7,7 @@
 
         <div class="grid-aside-container">
             <main class="grid-aside-content">
-                <h2>Greetings, Fellow Voyagers! Welcome to "Travel with Me" 🌐</h2>🌐
-                <br><br>
+                <h2>🌐 Greetings, Fellow Voyagers! Welcome to "Travel with Me" 🌐</h2>
 
                 Salutations, intrepid souls, and a warm welcome to "Travel with Me," where the allure of exploration and
                 cultural immersion intertwines. I am Marcus, the navigator of this virtual odyssey, and I extend an earnest
@@ -30,7 +29,41 @@
                 Marcus 🌍
             </main>
             <aside class="sidebar">
+                <section>
+                    <h3>SEARCH</h3>
 
+                    <form action="" method="get">
+                        <input type="text" name="busqueda"><br>
+                        <input type="submit" name="enviar" value="Search">
+                    </form>
+                </section>
+
+                <section class="sidebar-recent-uploads">
+
+                    <h3>RECENT UPLOADS</h3>
+
+                    <a href="#" class="sidebar-horizontal-card">
+                        <img src="./imgs/tip-three.jpg" alt="">
+                        <div class="sidebar-recent-uploads-text">
+                            <h4>Post 1</h4>
+                            <p>xx/xx/xx</p>
+                        </div>
+                    </a>
+                    <a href="#" class="sidebar-horizontal-card">
+                        <img src="./imgs/tip-three.jpg" alt="">
+                        <div class="sidebar-recent-uploads-text">
+                            <h4>Post 2</h4>
+                            <p>xx/xx/xx</p>
+                        </div>
+                    </a>
+                    <a href="#" class="sidebar-horizontal-card">
+                        <img src="./imgs/tip-three.jpg" alt="">
+                        <div class="sidebar-recent-uploads-text">
+                            <h4>Post 3</h4>
+                            <p>xx/xx/xx</p>
+                        </div>
+                    </a>
+                </section>
             </aside>
         </div>
 
