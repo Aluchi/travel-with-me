@@ -1,13 +1,12 @@
 <?php include('./layouts/header.php'); ?>
-        <section class="about-hero-section">
+        <section class="blog-hero-section">
             <div class="hero-content ">
-                <h1>ABOUT ME</h1>
+                <h1>BLOG</h1>
             </div>
         </section>
 
-        <div class="grid-aside-container wrapper">
+        <div class="grid-aside-container">
             <main class="grid-aside-content">
-                
                 <h2>🌐 Greetings, Fellow Voyagers! Welcome to "Travel with Me" 🌐</h2>
 
                 <p>
@@ -30,10 +29,9 @@
                     Embark with curiosity and an open heart,
                     Marcus 🌍
                 </p>
-
+                
             </main>
             <?php include('./layouts/aside.php'); ?>
-
         </div>
 
 

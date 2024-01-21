@@ -1,0 +1,37 @@
+.grid-aside-container {
+	.sidebar {
+		grid-area: aside;
+		height: fit-content;
+		padding: 20px;
+		border: 2px #c7c7c7 solid;
+		border-radius: 5px;
+		.sidebar-recent-uploads {
+			.sidebar-card {
+				display: flex;
+				align-items: center;
+				margin: 10px 0px;
+				padding: 0px 0px 10px 0px;
+				border-bottom: 2px #c7c7c7 solid;
+				color: #000000;
+				text-decoration: none;
+				&:hover {
+					color: var(--orange-web);
+				}
+				&:last-child {
+					border-bottom: none;
+					padding: 0px;
+				}
+				img {
+					width: 60px;
+					height: 60px;
+					object-fit: cover;
+					border-radius: 5px;
+					filter: brightness(70%);
+				}
+				.sidebar-card-text {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}

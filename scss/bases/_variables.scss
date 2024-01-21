@@ -1,4 +1,7 @@
 %bg-configs {
+    position: relative;
+    width: 100%;
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,4 +13,24 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+
+.blog-hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/blog-hero.jpg");
+    @extend %bg-configs
+}
+
+.privacy-hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/tip-one.jpg");
+    @extend %bg-configs
+}
+
+
+.about-hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/coffee-cup.jpg");
+    @extend %bg-configs
 }

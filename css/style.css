@@ -100,59 +100,84 @@ header.down ul li a{
 
 /*--------- SIDEBAR ---------*/
 
+.twntypx-margin-top {
+    margin-top: 20px;
+}
+
+
+
 .grid-aside-container {
-	width: 90%;
-	max-width: 1000px;
-	margin: 20px auto;
-	display: grid;
-	gap: 20px;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(4, auto);
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.8fr;
+    grid-template-areas: 
+        "main main aside"
+        "main main aside"
+        "main main aside"
+    ;
+    gap: 20px;
+    padding: 20px;
+}
+.grid-aside-container .grid-aside-content{
+    grid-area: main;
+    background-color: #f7f7f7;
+
+    border-radius: 5px;
+    text-align: justify;
+    padding: 20px;
+}
+.grid-aside-container .grid-aside-content ol {
+    margin-left: 30px;
+}
+.grid-aside-container .grid-aside-content .bg-text {
+    opacity: 0.7;
 }
 
-.grid-aside-container .grid-aside-content {
-    grid-column: span 2;
+.grid-aside-container .sidebar{
+    grid-area: aside;
+    height: fit-content;
+    padding: 20px;
+
+    border: 2px #c7c7c7 solid;
+    border-radius: 5px;
 }
 
-.grid-aside-container > div,
-.grid-aside-container .grid-aside-content,
-.grid-aside-container .sidebar {
-	background: #fff;
-	padding: 20px;
-	border-radius: 4px;
-}
-
-
-.grid-aside-container .sidebar {
-	grid-column: 3 / 4;
-    border: 2px solid #e2e2e2;
-	min-height: 100px;
-}
-
-.sidebar-horizontal-card {
-    width: 100%;
+.grid-aside-container .sidebar .sidebar-recent-uploads .sidebar-card {
     display: flex;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #e2e2e2;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 0px 0px 10px 0px;
+
+    border-bottom: 2px #c7c7c7 solid;
+
+    color: #000000;
+    text-decoration: none;
 }
-.sidebar-horizontal-card:last-child {
-    width: 100%;
-    display: flex;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+.grid-aside-container .sidebar .sidebar-recent-uploads .sidebar-card:hover {
+    color: var(--orange-web);
+}
+.grid-aside-container .sidebar .sidebar-recent-uploads .sidebar-card:last-child {
     border-bottom: none;
+    padding: 0px;
 }
-.sidebar-horizontal-card img {
+.grid-aside-container .sidebar .sidebar-recent-uploads .sidebar-card img {
     width: 60px;
     height: 60px;
     object-fit: cover;
-    margin-right: 10px;
+    border-radius: 5px;
+    filter: brightness(70%);
+}
+.grid-aside-container .sidebar .sidebar-recent-uploads .sidebar-card .sidebar-card-text {
+    margin-left: 10px;
 }
 
-.sidebar-recent-uploads .sidebar-recent-uploads-text {
-    
+/*---------- INPUTS COUNTRIES-DROPDOWN STYLING -----------*/
+
+.countries-dropdown select {
+    padding: 5px 15px;
+    font-size: 15px;
 }
+
+
 
 
 /*----------- BLOG-HERO ---------*/
@@ -161,7 +186,45 @@ header.down ul li a{
     position: relative;
     width: 100%;
     height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/blog-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------- PRIVACY-HERO ---------*/
+
+.privacy-hero-section {
+    position: relative;
+    width: 100%;
+    height: 50vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/tip-one.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------- ABOUT-HERO ---------*/
+
+.about-hero-section {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,13 +263,8 @@ header.down ul li a{
 
 .hero-content h1 {
     font-family: 'Franklin Gothic Medium';
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
-}
-
-.header-content h3 {
-    font-size: 20px;
-    font-weight: 100;
 }
 
 /*----------- COUNTRIES SECTION _ HOME PAGE -----------*/
