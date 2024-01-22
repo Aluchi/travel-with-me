@@ -237,6 +237,16 @@ header.down ul li a{
     align-items: center;
 }
 
+.about-hero-section, .blog-hero-section,
+.privacy-hero-section .hero-content h1{
+    color: var(--white);
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+}
+.privacy-hero-section .hero-content h3 {
+    color: var(--white);
+}
+
 /*----------- HERO ----------*/
 
 .hero-section {
@@ -256,21 +266,20 @@ header.down ul li a{
     align-items: center;
 }
 
-.hero-content {
+.hero-section .hero-content {
     color: var(--white);
     line-height: 50px;
 }
 
-.hero-content h1 {
+.hero-section .hero-content h1 {
     font-family: 'Franklin Gothic Medium';
     font-size: 50px;
-    font-weight: bold;
 }
 
 /*----------- COUNTRIES SECTION _ HOME PAGE -----------*/
 
 
-.countries {
+main .countries {
     height: 500px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -280,35 +289,33 @@ header.down ul li a{
     ;
 }
 
-.contr-one{
+main .countries .contr-one{
     grid-area: contr-one;
 }
-.contr-two {
+main .countries .contr-two {
     grid-area: contr-two;
 }
-.contr-three {
+main .countries .contr-three {
     grid-area: contr-three;
 }
-.contr-four {
+main .countries .contr-four {
     grid-area: contr-four;
 }
 
 
 
-.countries a {
+main .countries .country-card a {
     text-decoration: none;
     color: var(--white);
 }
-
-
-.countries .country-card {
+main .countries .country-card {
     position: relative;
 }
-.country-card:hover {
+main .countries .country-card:hover {
     filter: brightness(80%);
 }
 
-.countries .country-card a img {
+main .countries .country-card a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -316,7 +323,7 @@ header.down ul li a{
     filter: brightness(50%);
 }
 
-.countries .country-card a h2 {
+main .countries .country-card a h2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -328,35 +335,35 @@ header.down ul li a{
 
 /*----------- LASTEST POST _HOME PAGE -----------*/
 
-.lastest-post .lastest-post-title {
+main .lastest-post .lastest-post-title {
     text-align: center;
     font-size: 35px;
     margin-bottom: 35px;
 }
 
 
-.lastest-post .post-card-large {
+main .lastest-post .post-card-large {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.lastest-post .post-card-large img {
+main .lastest-post .post-card-large img {
     width: 700px;
     object-fit: cover;
 }
 
-.lastest-post .post-card-large .post-text {
+main .lastest-post .post-card-large .post-text {
     margin: 30px 0px 30px 30px;
 }
-.lastest-post .post-card-large .post-text h2 {
+main .lastest-post .post-card-large .post-text h2 {
     font-size: 40px;
     margin-bottom: 20px;
 }
-.lastest-post .post-card-large .post-text p {
+main .lastest-post .post-card-large .post-text p {
     margin-bottom: 20px;
 }
-.lastest-post .post-card-large .post-text a{
+main .lastest-post .post-card-large .post-text .rdm-btn{
     padding: 10px 20px;
     text-decoration: none;
     background-color: var(--eerie-black);
@@ -366,7 +373,7 @@ header.down ul li a{
 
     transition: .1s ease-in;
 }
-.lastest-post .post-card-large .post-text a:hover{
+main .lastest-post .post-card-large .post-text .rdm-btn:hover{
     text-decoration: none;
     color: var(--orange-web);
     background-color: var(--white);
@@ -374,7 +381,13 @@ header.down ul li a{
 
 /*------------- TIPS _ HOME -------------*/
 
-.six-cards-grid {
+main .tips h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+main .tips .six-cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
@@ -383,37 +396,37 @@ header.down ul li a{
     ;
 }
 
-.first-six-card {
+main .tips .six-cards-grid .first-six-card {
     grid-area: tip-one;
 }
-.second-six-card {
+main .tips .six-cards-grid .second-six-card {
     grid-area: tip-two;
 
 }
-.third-six-card {
+main .tips .six-cards-grid .third-six-card {
     grid-area: tip-three;
 
 }
-.fourth-six-card {
+main .tips .six-cards-grid .fourth-six-card {
     grid-area: tip-four;
 
 }
-.fifth-six-card {
+main .tips .six-cards-grid .fifth-six-card {
     grid-area: tip-five;
 
 }
-.sixth-six-card {
+main .tips .six-cards-grid .sixth-six-card {
     grid-area: tip-six;
 }
 
-.six-cards-grid .six-card {
+main .tips .six-cards-grid .six-card {
     position: relative;
 }
-.six-cards-grid .six-card:hover {
+main .tips .six-cards-grid .six-card:hover {
     filter: brightness(80%);
 }
 
-.six-cards-grid .six-card a img {
+main .tips .six-cards-grid .six-card a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -421,7 +434,7 @@ header.down ul li a{
     filter: brightness(50%);
 }
 
-.six-cards-grid .six-card a h3 {
+main .tips .six-cards-grid .six-card a h3 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -429,21 +442,6 @@ header.down ul li a{
     font-size: 30px;
     color: var(--white);
 }
-
-.tips h2 {
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 35px;
-}
-
-
-
-
-
-
-
-
-
 
 
 /*--------- FOOTER --------*/

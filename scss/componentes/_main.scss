@@ -1,3 +1,149 @@
+/* Estructura del main en el index */
+
+main {
+	.countries {
+		height: 500px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: "contr-one contr-two contr-three contr-four"
+        "contr-one contr-two contr-three contr-four";
+		.contr-one {
+			grid-area: contr-one;
+		}
+		.contr-two {
+			grid-area: contr-two;
+		}
+		.contr-three {
+			grid-area: contr-three;
+		}
+		.contr-four {
+			grid-area: contr-four;
+		}
+		.country-card {
+			position: relative;
+			a {
+				text-decoration: none;
+				color: var(--white);
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					overflow: hidden;
+					filter: brightness(50%);
+				}
+				h2 {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					font-size: 50px;
+				}
+			}
+			&:hover {
+				filter: brightness(80%);
+			}
+		}
+	}
+	.lastest-post {
+		.lastest-post-title {
+			text-align: center;
+			font-size: 35px;
+			margin-bottom: 35px;
+		}
+		.post-card-large {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			img {
+				width: 700px;
+				object-fit: cover;
+			}
+			.post-text {
+				margin: 30px 0px 30px 30px;
+				h2 {
+					font-size: 40px;
+					margin-bottom: 20px;
+				}
+				p {
+					margin-bottom: 20px;
+				}
+				.rdm-btn {
+					padding: 10px 20px;
+					text-decoration: none;
+					background-color: var(--eerie-black);
+					color: var(--white);
+					border: 1px #161616 solid;
+					border-radius: 5px;
+					transition: .1s ease-in;
+					&:hover {
+						text-decoration: none;
+						color: var(--orange-web);
+						background-color: var(--white);
+					}
+				}
+			}
+		}
+	}
+	.tips {
+		h2 {
+			text-align: center;
+			font-size: 35px;
+			margin-bottom: 35px;
+		}
+		.six-cards-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-areas: "tip-one tip-two tip-three"
+        "tip-four tip-five tip-six";
+			.first-six-card {
+				grid-area: tip-one;
+			}
+			.second-six-card {
+				grid-area: tip-two;
+			}
+			.third-six-card {
+				grid-area: tip-three;
+			}
+			.fourth-six-card {
+				grid-area: tip-four;
+			}
+			.fifth-six-card {
+				grid-area: tip-five;
+			}
+			.sixth-six-card {
+				grid-area: tip-six;
+			}
+			.six-card {
+				position: relative;
+				&:hover {
+					filter: brightness(80%);
+				}
+				a {
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						overflow: hidden;
+						filter: brightness(50%);
+					}
+					h3 {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						font-size: 30px;
+						color: var(--white);
+					}
+				}
+			}
+		}
+	}
+}
+
+/*lo de abajo vendría a ser el de main de las otras páginas ya que las demas 
+tienen una estructura diferente que la del index. No estan dentro de un main, sino
+que un div (grid-aside-container) encapsula al main y a un aside*/
+
 .grid-aside-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 0.8fr;

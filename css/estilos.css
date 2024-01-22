@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .blog-hero-section, .privacy-hero-section, .about-hero-section {
   position: relative;
   width: 100%;
@@ -5,7 +6,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
 
 .blog-hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/blog-hero.jpg"); }
@@ -89,6 +94,114 @@ header.down ul li a {
     .grid-aside-container .sidebar .sidebar-recent-uploads .sidebar-card .sidebar-card-text {
       margin-left: 10px; }
 
+/* Estructura del main en el index */
+main .countries {
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "contr-one contr-two contr-three contr-four" "contr-one contr-two contr-three contr-four"; }
+  main .countries .contr-one {
+    grid-area: contr-one; }
+  main .countries .contr-two {
+    grid-area: contr-two; }
+  main .countries .contr-three {
+    grid-area: contr-three; }
+  main .countries .contr-four {
+    grid-area: contr-four; }
+  main .countries .country-card {
+    position: relative; }
+    main .countries .country-card a {
+      text-decoration: none;
+      color: var(--white); }
+      main .countries .country-card a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        filter: brightness(50%); }
+      main .countries .country-card a h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px; }
+    main .countries .country-card:hover {
+      filter: brightness(80%); }
+
+main .lastest-post .lastest-post-title {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 35px; }
+
+main .lastest-post .post-card-large {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  main .lastest-post .post-card-large img {
+    width: 700px;
+    object-fit: cover; }
+  main .lastest-post .post-card-large .post-text {
+    margin: 30px 0px 30px 30px; }
+    main .lastest-post .post-card-large .post-text h2 {
+      font-size: 40px;
+      margin-bottom: 20px; }
+    main .lastest-post .post-card-large .post-text p {
+      margin-bottom: 20px; }
+    main .lastest-post .post-card-large .post-text .rdm-btn {
+      padding: 10px 20px;
+      text-decoration: none;
+      background-color: var(--eerie-black);
+      color: var(--white);
+      border: 1px #161616 solid;
+      border-radius: 5px;
+      transition: .1s ease-in; }
+      main .lastest-post .post-card-large .post-text .rdm-btn:hover {
+        text-decoration: none;
+        color: var(--orange-web);
+        background-color: var(--white); }
+
+main .tips h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 35px; }
+
+main .tips .six-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "tip-one tip-two tip-three" "tip-four tip-five tip-six"; }
+  main .tips .six-cards-grid .first-six-card {
+    grid-area: tip-one; }
+  main .tips .six-cards-grid .second-six-card {
+    grid-area: tip-two; }
+  main .tips .six-cards-grid .third-six-card {
+    grid-area: tip-three; }
+  main .tips .six-cards-grid .fourth-six-card {
+    grid-area: tip-four; }
+  main .tips .six-cards-grid .fifth-six-card {
+    grid-area: tip-five; }
+  main .tips .six-cards-grid .sixth-six-card {
+    grid-area: tip-six; }
+  main .tips .six-cards-grid .six-card {
+    position: relative; }
+    main .tips .six-cards-grid .six-card:hover {
+      filter: brightness(80%); }
+    main .tips .six-cards-grid .six-card a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      filter: brightness(50%); }
+    main .tips .six-cards-grid .six-card a h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      color: var(--white); }
+
+/*lo de abajo vendría a ser el de main de las otras páginas ya que las demas 
+tienen una estructura diferente que la del index. No estan dentro de un main, sino
+que un div (grid-aside-container) encapsula al main y a un aside*/
 .grid-aside-container {
   display: grid;
   grid-template-columns: 1fr 1fr 0.8fr;

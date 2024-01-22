@@ -1,14 +1,38 @@
-<?php include('./layouts/header.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <a href="#" class="logo">Travel With Me</a>
+
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/blog.html">Blog</a></li>
+                    <li><a href="./pages/privacy.html">Privacy</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section class="hero-section">
+            <div class="hero-content ">
+                <h1>Travel With Me</h1>
+                <h3>Travelling around the world since 2015</h3>
+            </div>
+        </section>
+
         <main>
-
-            <section class="hero-section">
-                <div class="hero-content ">
-                    <h1>Travel With Me</h1>
-                    <h3>Travelling around the world since 2015</h3>
-                </div>
-
-
-            </section>
 
             <section class="countries">
                 <div class="country-card contr-one">
@@ -100,4 +124,27 @@
 
         </main>
 
-<?php include('./layouts/footer.php'); ?>
+        <footer>
+            <div class="footer-container">
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./pages/about.html">About</a></li>
+                        <li><a href="./pages/blog.html">Blog</a></li>
+                        <li><a href="./pages/privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy;2024; Designed by <span class="designer">Alexander Muruchi</span></p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
