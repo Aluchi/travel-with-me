@@ -117,12 +117,27 @@ header.down ul li a{
     gap: 20px;
     padding: 20px;
 }
+
+@media screen and (max-width: 1100px) {
+    .grid-aside-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "main main"
+            "main main"
+            "main main"
+            "aside aside"
+        ;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
 .grid-aside-container .grid-aside-content{
     grid-area: main;
     background-color: #f7f7f7;
 
     border-radius: 5px;
-    text-align: justify;
     padding: 20px;
 }
 .grid-aside-container .grid-aside-content ol {
@@ -139,6 +154,7 @@ header.down ul li a{
 
     border: 2px #c7c7c7 solid;
     border-radius: 5px;
+    background-color: #fff;
 }
 
 .grid-aside-container .sidebar .sidebar-recent-uploads .sidebar-card {
@@ -443,6 +459,79 @@ main .tips .six-cards-grid .six-card a h3 {
     color: var(--white);
 }
 
+/*-------- BLOG-PAGE -------*/
+
+.blog-articles article .inside-article .post-image a img {
+    width: 100%;
+}
+.blog-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blog-articles article {
+    width: calc(33.33% - 20px); /* 20px de espacio entre los elementos */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.blog-articles article:first-child {
+    width: calc(66.66% - 20px); /* Ancho mayor para el primer artículo */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (max-width: 700px) {
+    .blog-articles article {
+        width: calc(50% - 20px);
+    }
+    .blog-articles article:first-child {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Ajustes para pantallas aún más pequeñas */
+@media screen and (max-width: 500px) {
+    .blog-articles article {
+        width: 100%;
+    }
+    .blog-articles article:first-child {
+        width: 100%;
+    }
+}
+
+.blog-articles article .inside-article .entry-header{
+    
+}
+.blog-articles article .inside-article .entry-header .entry-meta{
+    margin-top: .5em;
+}
+.blog-articles article .inside-article .entry-header .entry-meta .posted-on{
+    color: #595959;
+}
+.blog-articles article .inside-article .entry-header .entry-title a{
+    text-decoration: none;
+    color: #000;
+
+    transition: .1s ease-in;
+}
+.blog-articles article .inside-article .entry-header .entry-title a:hover{
+    color: var(--orange-web);
+}
+
+.blog-articles article .inside-article .entry-summary{
+    margin-top: .5em;
+}
+.blog-articles article .inside-article .entry-summary p a{
+    text-decoration: none;
+    color: var(--orange-web);
+
+    transition: .1s ease-in;
+}
+.blog-articles article .inside-article .entry-summary p a:hover{
+    color: #000;
+}
+
+
+
 
 /*--------- FOOTER --------*/
 
@@ -519,6 +608,7 @@ footer .footer-bottom span.designer {
     font-weight: 400;
     margin: 0px 5px;
 }
+
 
 
 
