@@ -296,7 +296,6 @@ header.down ul li a{
 
 
 main .countries {
-    height: 500px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
@@ -318,6 +317,30 @@ main .countries .contr-four {
     grid-area: contr-four;
 }
 
+@media screen and (max-width: 1280px) {
+    main .countries {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "contr-one contr-two"
+            "contr-three contr-four"
+        ;
+    }
+}
+@media screen and (max-width: 720px) {
+    main .countries {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "contr-one"
+            "contr-two"
+            "contr-three"
+            "contr-four"
+        ;
+    }
+}
+
+
 
 
 main .countries .country-card a {
@@ -335,7 +358,6 @@ main .countries .country-card a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    overflow: hidden;
     filter: brightness(50%);
 }
 
@@ -528,6 +550,25 @@ main .tips .six-cards-grid .six-card a h3 {
 }
 .blog-articles article .inside-article .entry-summary p a:hover{
     color: #000;
+}
+
+
+
+/***/
+
+.post-page-title {
+    text-align: center;
+}
+.post-page-title h2 {
+    margin-top: .5em;
+    font-size: 2.5em;
+}
+.post-page-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 3em 0;
 }
 
 
