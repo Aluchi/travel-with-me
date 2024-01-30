@@ -1,126 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
-        <link rel="stylesheet" type="text/css" href="../../css/style.css">
-        <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="../../js/script.js"></script>
-        <link rel="shortcut icon" href="../../imgs/icon.ico" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+    <link rel="shortcut icon" href="../../imgs/icon.ico" />
+</head>
 
-    <body>
+<body>
 
-        <header>
-            <a href="../../index.html" class="logo">Travel With Me</a>
+    <header>
+        <a href="../../index.html" class="logo">Travel With Me</a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="bi bi-list"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
 
-            <nav>
+    </header>
+    <section class="blog-hero-section">
+        <div class="hero-content ">
+            <h1>BLOG</h1>
+        </div>
+    </section>
+
+    <div class="grid-aside-container wrapper">
+        <main class="grid-aside-content">
+
+            <div class="post-page-title">
+                <span>xx/xx/xx</span>
+                <h2>Nightlife in Buenos Aires</h2>
+            </div>
+
+            <div class="post-page-img">
+                <img src="../../imgs/congreso.jpg" alt="">
+            </div>
+
+
+            <p>
+                Buenos Aires, a city that never sleeps, beckons night owls and party enthusiasts to experience the
+                vibrant tapestry of its nightlife. Join us as we navigate the nocturnal wonders of Buenos Aires and
+                discover why the city truly comes alive after the sun sets.
+                <br><br>
+
+                Start your evening in Palermo, where the nightlife pulses with energy. This trendy neighborhood offers a
+                kaleidoscope of options, from chic rooftop bars to quirky speakeasies hidden behind unassuming facades.
+                Grab a cocktail, soak in the eclectic ambiance, and feel the heartbeat of Buenos Aires as the night
+                unfolds.
+                <br><br>
+
+                As the evening progresses, venture into San Telmo, where the historic cobblestone streets provide the
+                backdrop for an array of bars and clubs. Dive into the heart of tango at one of the many milongas, where
+                locals and visitors alike dance the night away. The rhythm of the music and the passionate movements
+                create an atmosphere that's quintessentially Buenos Aires.
+                <br><br>
+
+                For those seeking a more upscale experience, Puerto Madero is the place to be. This waterfront district
+                boasts exclusive clubs and sophisticated lounges with stunning views of the city lights reflecting on
+                the Rio de la Plata. Sip on premium cocktails and revel in the sophistication of Buenos Aires' upscale
+                nightlife.
+                <br><br>
+
+                No exploration of Buenos Aires' nightlife would be complete without a visit to a traditional boliche.
+                These large-scale nightclubs, often housed in converted theaters, are the epicenter of the city's
+                electronic and Latin music scenes. Lose yourself in the beats, surrounded by a diverse crowd of locals
+                and international revelers.
+                <br><br>
+
+                For a unique nocturnal adventure, head to a peña in the neighborhood of Abasto. These traditional folk
+                music venues offer an intimate setting where locals gather to enjoy live music, dance, and share the
+                spirit of camaraderie. Immerse yourself in the authentic sounds of Argentine folklore as you mingle with
+                the friendly crowd.
+                <br><br>
+
+                As dawn approaches, cap off your night with a visit to a late-night parrilla. These eateries,
+                specializing in Argentine barbecue, serve as a delicious conclusion to your nocturnal escapade. Savor
+                the flavors of Argentina as you reflect on the memories made during a night filled with music, dance,
+                and the irresistible charm of Buenos Aires after dark.
+                <br><br>
+
+                Buenos Aires, with its dynamic nightlife, invites you to explore a city that transforms into a nocturnal
+                playground. From the trendy streets of Palermo to the rhythmic heart of San Telmo and the upscale
+                sophistication of Puerto Madero, each neighborhood contributes to the mosaic of Buenos Aires' vibrant
+                nights. Join us on this journey through the city's after-dark wonders, where every step unveils a new
+                facet of the nightlife scene in Argentina's capital.
+            </p>
+
+        </main>
+        <aside class="sidebar">
+            <section class="sidebar-search">
+                <h3>SEARCH</h3>
+
+                <form action="" method="get">
+                    <input type="text" name="busqueda"><br>
+                    <input type="submit" name="enviar" value="Search">
+                </form>
+            </section>
+
+            <section class="countries-dropdown twntypx-margin-top">
+                <h3>COUNTRIES</h3>
+
+                <select name="" id="">
+                    <option value="Argentina">Argentina</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Japan">Japan</option>
+                </select>
+            </section>
+
+            <section class="sidebar-recent-uploads twntypx-margin-top">
+
+                <h3>RECENT UPLOADS</h3>
+
+                <div class="sidebar-cards-container">
+                    <a href="./five-places-to-visit-in-argentina.html" class="sidebar-card">
+                        <img src="../../imgs/arg-flag.png" alt="">
+                        <div class="sidebar-card-text">
+                            <h4>5 places to visit in Argentina</h4>
+                            <p>
+                                <time datetime="2020-12-01">2020-12-01</time></p>
+                        </div>
+                    </a>
+                    <a href="./architectural-marvels-argentinas-national-congress-and-beyond.html" class="sidebar-card">
+                        <img src="../../imgs/congreso.jpg" alt="">
+                        <div class="sidebar-card-text">
+                            <h4>Architectural marvels: Argentina's national congress and beyond</h4>
+                            <p>
+                                <time datetime="2018-05-27">2018-05-27</time></p>
+                        </div>
+                    </a>
+                    <a href="./nightlife-in-buenos-aires.html" class="sidebar-card">
+                        <img src="../../imgs/obelisco.jpg" alt="">
+                        <div class="sidebar-card-text">
+                            <h4>Nightlife in Buenos Aires</h4>
+                            <p>
+                                <time datetime="2017-11-05">2017-11-05</time>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="./interesting-things-to-do-in-canada.html" class="sidebar-card">
+                        <img src="../../imgs/canada-flag.jpg" alt="">
+                        <div class="sidebar-card-text">
+                            <h4>Interesting things to do in Canada</h4>
+                            <p>
+                                <time datetime="2017-04-12">2017-04-12</time>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+
+            </section>
+        </aside>
+
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footer-nav">
                 <ul>
                     <li><a href="../../index.html">Home</a></li>
                     <li><a href="../about.html">About</a></li>
                     <li><a href="../blog.html">Blog</a></li>
                     <li><a href="../privacy.html">Privacy</a></li>
                 </ul>
-            </nav>
-
-        </header>
-        <section class="blog-hero-section">
-            <div class="hero-content ">
-                <h1>BLOG</h1>
             </div>
-        </section>
-
-        <div class="grid-aside-container wrapper">
-            <main class="grid-aside-content">
-                
-                
-
-            </main>
-            <aside class="sidebar">
-                <section class="sidebar-search">
-                    <h3>SEARCH</h3>
-    
-                    <form action="" method="get">
-                        <input type="text" name="busqueda"><br>
-                        <input type="submit" name="enviar" value="Search">
-                    </form>
-                </section>
-    
-                <section class="countries-dropdown twntypx-margin-top">
-                    <h3>COUNTRIES</h3>
-    
-                    <select name="" id="">
-                        <option value="Argentina">Argentina</option>
-                        <option value="United States">United States</option>
-                        <option value="Canada">Canada</option>
-                        <option value="Japan">Japan</option>
-                    </select>
-                </section>
-    
-                <section class="sidebar-recent-uploads twntypx-margin-top">
-    
-                    <h3>RECENT UPLOADS</h3>
-    
-                    <div class="sidebar-cards-container">
-                        <a href="./five-places-to-visit-in-argentina.html" class="sidebar-card">
-                            <img src="../../imgs/arg-flag.png" alt="">
-                            <div class="sidebar-card-text">
-                                <h4>Post 1</h4>
-                                <p>xx/xx/xx</p>
-                            </div>
-                        </a>
-                        <a href="./architectural-marvels-argentinas-national-congress-and-beyond.html" class="sidebar-card">
-                            <img src="../../imgs/congreso.jpg" alt="">
-                            <div class="sidebar-card-text">
-                                <h4>Post 2</h4>
-                                <p>xx/xx/xx</p>
-                            </div>
-                        </a>
-                        <a href="./nightlife-in-buenos-aires.html" class="sidebar-card">
-                            <img src="../../imgs/obelisco.jpg" alt="">
-                            <div class="sidebar-card-text">
-                                <h4>Post 3</h4>
-                                <p>xx/xx/xx</p>
-                            </div>
-                        </a>
-                        <a href="./interesting-things-to-do-in-canada.html" class="sidebar-card">
-                            <img src="../../imgs/canada-flag.jpg" alt="">
-                            <div class="sidebar-card-text">
-                                <h4>Post 4</h4>
-                                <p>xx/xx/xx</p>
-                            </div>
-                        </a>
-                    </div>
-    
-                </section>
-            </aside>
-
         </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">Alexander Muruchi</span></p>
+        </div>
+    </footer>
 
-
-        <footer>
-            <div class="footer-container">
-                <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube"></i></a>
-                </div>
-                <div class="footer-nav">
-                    <ul>
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../about.html">About</a></li>
-                        <li><a href="../blog.html">Blog</a></li>
-                        <li><a href="../privacy.html">Privacy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Copyright &copy;2024; Designed by <span class="designer">Alexander Muruchi</span></p>
-            </div>
-        </footer>
-
-    </body>
+</body>
 
 </html>

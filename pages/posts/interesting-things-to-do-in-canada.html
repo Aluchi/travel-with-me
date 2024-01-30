@@ -15,7 +15,9 @@
 
         <header>
             <a href="../../index.html" class="logo">Travel With Me</a>
-
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="bi bi-list"></i>
+            </div>
             <nav>
                 <ul>
                     <li><a href="../../index.html">Home</a></li>
@@ -34,23 +36,80 @@
 
         <div class="grid-aside-container wrapper">
             <main class="grid-aside-content">
-                
-                
+
+                <div class="post-page-title">
+                    <span>xx/xx/xx</span>
+                    <h2>Interesting things to do in Canada</h2>
+                </div>
+
+                <div class="post-page-img">
+                    <img src="../../imgs/canada-flag.jpg" alt="">
+                </div>
+
+
+                <p>
+                    Canada, a vast and diverse land, beckons adventurers to explore its captivating landscapes and engage in
+                    a myriad of unique experiences. Join us as we uncover the interesting things to do in this enchanting
+                    country, where every corner holds a new adventure.
+                    <br><br>
+
+                    Begin your Canadian sojourn in the stunning province of Alberta, where the Banff National Park offers a
+                    haven for nature lovers. Embark on a scenic drive along the Icefields Parkway, where towering mountains
+                    and pristine lakes create a breathtaking backdrop. Don't miss the opportunity to walk on the Columbia
+                    Icefield Skywalk, providing a thrilling perspective of the surrounding glaciers.
+                    <br><br>
+
+                    As you venture into the vibrant city of Toronto, embrace the allure of the CN Tower. Scale this iconic
+                    landmark for panoramic views of the cityscape and Lake Ontario. For the more daring, the EdgeWalk offers
+                    a chance to walk on the exterior ledge of the tower, suspended 116 stories above the ground—a
+                    heart-pounding experience with unparalleled vistas.
+                    <br><br>
+
+                    Head east to Montreal, where the Montreal Museum of Fine Arts invites art enthusiasts to indulge in a
+                    cultural feast. Explore the extensive collection, featuring works from both classic and contemporary
+                    artists. The museum's dynamic exhibitions provide a captivating journey through the world of art, making
+                    it a must-visit for those seeking intellectual and aesthetic stimulation.
+                    <br><br>
+
+                    In the maritime charm of Nova Scotia, the Cabot Trail unfolds a scenic adventure. Wind along the coastal
+                    cliffs and through Cape Breton Highlands National Park, where breathtaking views of the Gulf of St.
+                    Lawrence and the Atlantic Ocean await. The Cabot Trail encapsulates the rugged beauty of Canada's
+                    eastern shores.
+                    <br><br>
+
+                    For a taste of cultural fusion, make your way to Vancouver's Granville Island. This vibrant hub is a
+                    haven for foodies and art enthusiasts alike. Stroll through the Public Market, savoring local
+                    delicacies, and explore the artisan shops showcasing handmade crafts. Granville Island encapsulates the
+                    diversity that defines Canada's cultural landscape.
+                    <br><br>
+
+                    Cap off your Canadian exploration in Quebec City, where Old Quebec stands as a UNESCO World Heritage
+                    site. Wander through cobblestone streets, surrounded by centuries-old architecture and the charm of
+                    French heritage. The historic district's enchanting ambiance invites you to step back in time and
+                    immerse yourself in the rich history of North America's oldest walled city.
+                    <br><br>
+
+                    Canada, with its vastness and variety, promises a kaleidoscope of experiences for every traveler. From
+                    the natural wonders of Banff to the urban sophistication of Toronto, and from the artistic allure of
+                    Montreal to the maritime charm of Nova Scotia, each destination contributes to the rich tapestry that is
+                    Canada. Join us on this journey of discovery as we uncover the interesting things to do in this
+                    remarkable country, where adventure and culture intertwine to create memories that last a lifetime.
+                </p>
 
             </main>
             <aside class="sidebar">
                 <section class="sidebar-search">
                     <h3>SEARCH</h3>
-    
+
                     <form action="" method="get">
                         <input type="text" name="busqueda"><br>
                         <input type="submit" name="enviar" value="Search">
                     </form>
                 </section>
-    
+
                 <section class="countries-dropdown twntypx-margin-top">
                     <h3>COUNTRIES</h3>
-    
+
                     <select name="" id="">
                         <option value="Argentina">Argentina</option>
                         <option value="United States">United States</option>
@@ -58,42 +117,49 @@
                         <option value="Japan">Japan</option>
                     </select>
                 </section>
-    
+
                 <section class="sidebar-recent-uploads twntypx-margin-top">
-    
+
                     <h3>RECENT UPLOADS</h3>
-    
+
                     <div class="sidebar-cards-container">
                         <a href="./five-places-to-visit-in-argentina.html" class="sidebar-card">
                             <img src="../../imgs/arg-flag.png" alt="">
                             <div class="sidebar-card-text">
-                                <h4>Post 1</h4>
-                                <p>xx/xx/xx</p>
+                                <h4>5 places to visit in Argentina</h4>
+                                <p>
+                                    <time datetime="2020-12-01">2020-12-01</time></p>
                             </div>
                         </a>
                         <a href="./architectural-marvels-argentinas-national-congress-and-beyond.html" class="sidebar-card">
                             <img src="../../imgs/congreso.jpg" alt="">
                             <div class="sidebar-card-text">
-                                <h4>Post 2</h4>
-                                <p>xx/xx/xx</p>
+                                <h4>Architectural marvels: Argentina's national congress and beyond</h4>
+                                <p>
+                                    <time datetime="2018-05-27">2018-05-27</time></p>
                             </div>
                         </a>
                         <a href="./nightlife-in-buenos-aires.html" class="sidebar-card">
                             <img src="../../imgs/obelisco.jpg" alt="">
                             <div class="sidebar-card-text">
-                                <h4>Post 3</h4>
-                                <p>xx/xx/xx</p>
+                                <h4>Nightlife in Buenos Aires</h4>
+                                <p>
+                                    <time datetime="2017-11-05">2017-11-05</time>
+                                </p>
                             </div>
                         </a>
                         <a href="./interesting-things-to-do-in-canada.html" class="sidebar-card">
                             <img src="../../imgs/canada-flag.jpg" alt="">
                             <div class="sidebar-card-text">
-                                <h4>Post 4</h4>
-                                <p>xx/xx/xx</p>
+                                <h4>Interesting things to do in Canada</h4>
+                                <p>
+                                    <time datetime="2017-04-12">2017-04-12</time>
+                                </p>
                             </div>
                         </a>
                     </div>
     
+
                 </section>
             </aside>
 

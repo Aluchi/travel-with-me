@@ -9,14 +9,19 @@
         <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="./js/script.js"></script>
         <link rel="shortcut icon" href="./imgs/icon.ico" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 
     <body>
 
         <header>
             <a href="#" class="logo">Travel With Me</a>
-
-            <nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="bi bi-list"></i>
+            </div>
+            <nav >
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./pages/about.html">About</a></li>
@@ -27,7 +32,7 @@
 
         </header>
         <section class="hero-section">
-            <div class="hero-content ">
+            <div class="hero-content animate__animated animate__fadeInUpBig" >
                 <h1>Travel With Me</h1>
                 <h3>Travelling around the world since 2016</h3>
             </div>
@@ -66,8 +71,8 @@
 
             <section class="lastest-post wrapper space-btw-sections">
                 <h2 class="lastest-post-title">LASTEST POST</h2>
-                <div class="post-card-large">
-                    <img src="./imgs/large-size-bridge-new-york.jpg" alt="">
+                <div class="post-card-large" data-aos="fade-up">
+                    <a href="#"><img src="./imgs/large-size-bridge-new-york.jpg" alt=""></a>
                     <div class="post-text">
                         <h2>Title</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim esse ullam explicabo dicta est
@@ -145,6 +150,10 @@
                 <p>Copyright &copy;2024; Designed by <span class="designer">Alexander Muruchi</span></p>
             </div>
         </footer>
+
+        <script>
+            AOS.init();
+        </script>
 
     </body>
 

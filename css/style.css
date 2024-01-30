@@ -93,8 +93,44 @@ header ul li a{
 }
 
 header.down .logo,
+header.down .menu-icon i,
 header.down ul li a{
 	color: #000;
+}
+
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 768px) {
+    header ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        background-color: #dddddd85;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+    }
+
+    header ul.show {
+        display: flex;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
 }
 
 
@@ -561,7 +597,6 @@ main .tips .six-cards-grid .six-card a h3 {
 }
 .post-page-title h2 {
     margin-top: .5em;
-    font-size: 2.5em;
 }
 .post-page-img {
     display: flex;

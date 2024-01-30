@@ -4,3 +4,7 @@ window.addEventListener("scroll", function(){
 })
 
 
+function toggleMenu() {
+    var menu = document.querySelector('header ul');
+    menu.classList.toggle('show');
+}
