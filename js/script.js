@@ -5,6 +5,6 @@ window.addEventListener("scroll", function(){
 
 
 function toggleMenu() {
-    var menu = document.querySelector('header ul');
+    var menu = document.querySelector('header nav');
     menu.classList.toggle('show');
 }

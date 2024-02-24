@@ -1,3 +1,4 @@
+/*---------------- HEADER ----------------*/
 header {
 	position: fixed;
 	top: 0;
@@ -8,47 +9,61 @@ header {
 	transition: 0.7s;
 	padding: 30px 20px;
 	z-index: 10;
-	&.down {
-		background: #fff;
-		padding: 15px 20px;
-	}
 	.logo {
 		position: relative;
-		color: #fff;
+		color: $white;
 		font-weight: bold;
 		font-size: 2em;
 		letter-spacing: 2px;
 		transition: 1.5s;
 		text-decoration: none;
 	}
-    nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        ul {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            li {
-                list-style: none;
-                a {
-                    position: relative;
-                    margin: 0 15px;
-                    text-decoration: none;
-                    color: #fff;
-                    letter-spacing: 2px;
-                    font-weight: 600;
-                    transition: 0.7s;
-                }
-            }
-        }
-
-    }
-	
+	ul {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		li {
+			list-style: none;
+			a {
+				position: relative;
+				margin: 0 15px;
+				text-decoration: none;
+				color: $white;
+				letter-spacing: 2px;
+				font-weight: 600;
+				transition: 0.7s;
+			}
+		}
+	}
 }
-
-header.down .logo,
-header.down ul li a {
-	color: #000;
+header.down {
+	background: $white;
+	padding: 15px 20px;
+	.logo {
+		color: $black;
+	}
+	.menu-icon {
+		i {
+			color: $black;
+		}
+	}
+	ul {
+		li {
+			a {
+				color: $black;
+			}
+		}
+	}
+}
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu-icon {
+	display: none;
+	cursor: pointer;
+	font-size: 1.5em;
+	color: $white;
 }

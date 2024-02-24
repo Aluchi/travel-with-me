@@ -1,4 +1,4 @@
-%bg-hero-configs {
+%banners-configs {
     position: relative;
     width: 100%;
     height: 50vh;
@@ -11,6 +11,21 @@
     justify-content: center;
     align-items: center;
 }
+%hero-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 
 %flex-center-and-text{
     display: flex;
@@ -20,21 +35,13 @@
 }
 
 
+$orange-web: #faa916ff;
+$white: #fbfffeff;
+$white-two: #f7f7f7;
+$dim-gray: #6d676eff;
+$eerie-black: #41444B;
+$carmine: #96031aff;
+$sort-of-black: #161616;
+$black: #000000;
 
 
-
-.blog-hero-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/blog-hero.jpg");
-    @extend %bg-hero-configs
-}
-
-.privacy-hero-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/tip-one.jpg");
-    @extend %bg-hero-configs
-}
-
-
-.about-hero-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/coffee-cup.jpg");
-    @extend %bg-hero-configs
-}

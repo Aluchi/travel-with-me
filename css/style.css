@@ -106,42 +106,11 @@ header.down ul li a{
     color: #fff;
 }
 
-
-@media only screen and (max-width: 768px) {
-    header ul {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        position: absolute;
-        background-color: #dddddd85;
-        top: 60px;
-        left: 0;
-        z-index: 10;
-    }
-
-    header ul.show {
-        display: flex;
-    }
-
-    header ul li {
-        margin: 10px 0;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-}
-
-
 /*--------- SIDEBAR ---------*/
 
 .twntypx-margin-top {
     margin-top: 20px;
 }
-
-
-
 .grid-aside-container {
     display: grid;
     grid-template-columns: 1fr 1fr 0.8fr;
@@ -152,21 +121,6 @@ header.down ul li a{
     ;
     gap: 20px;
     padding: 20px;
-}
-
-@media screen and (max-width: 1100px) {
-    .grid-aside-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-            "main main"
-            "main main"
-            "main main"
-            "aside aside"
-        ;
-        gap: 20px;
-        padding: 20px;
-    }
 }
 
 .grid-aside-container .grid-aside-content{
@@ -328,6 +282,7 @@ header.down ul li a{
     font-size: 50px;
 }
 
+
 /*----------- COUNTRIES SECTION _ HOME PAGE -----------*/
 
 
@@ -353,31 +308,6 @@ main .countries .contr-four {
     grid-area: contr-four;
 }
 
-@media screen and (max-width: 1280px) {
-    main .countries {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-            "contr-one contr-two"
-            "contr-three contr-four"
-        ;
-    }
-}
-@media screen and (max-width: 720px) {
-    main .countries {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "contr-one"
-            "contr-two"
-            "contr-three"
-            "contr-four"
-        ;
-    }
-}
-
-
-
 
 main .countries .country-card a {
     text-decoration: none;
@@ -394,6 +324,7 @@ main .countries .country-card a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    overflow: hidden;
     filter: brightness(50%);
 }
 
@@ -423,9 +354,11 @@ main .lastest-post .post-card-large {
 }
 
 main .lastest-post .post-card-large img {
-    width: 700px;
+    width: 650px;
     object-fit: cover;
+    overflow: hidden;
 }
+
 
 main .lastest-post .post-card-large .post-text {
     margin: 30px 0px 30px 30px;
@@ -470,6 +403,8 @@ main .tips .six-cards-grid {
     ;
 }
 
+
+
 main .tips .six-cards-grid .first-six-card {
     grid-area: tip-one;
 }
@@ -496,11 +431,11 @@ main .tips .six-cards-grid .sixth-six-card {
 main .tips .six-cards-grid .six-card {
     position: relative;
 }
-main .tips .six-cards-grid .six-card:hover {
-    filter: brightness(80%);
+main .tips .six-cards-grid .six-card:hover img {
+    filter: brightness(40%);
 }
 
-main .tips .six-cards-grid .six-card a img {
+main .tips .six-cards-grid .six-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -508,7 +443,7 @@ main .tips .six-cards-grid .six-card a img {
     filter: brightness(50%);
 }
 
-main .tips .six-cards-grid .six-card a h3 {
+main .tips .six-cards-grid .six-card h3 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -536,29 +471,7 @@ main .tips .six-cards-grid .six-card a h3 {
     width: calc(66.66% - 20px); /* Ancho mayor para el primer artículo */
 }
 
-/* Ajustes para pantallas más pequeñas */
-@media screen and (max-width: 700px) {
-    .blog-articles article {
-        width: calc(50% - 20px);
-    }
-    .blog-articles article:first-child {
-        width: calc(100% - 20px);
-    }
-}
 
-/* Ajustes para pantallas aún más pequeñas */
-@media screen and (max-width: 500px) {
-    .blog-articles article {
-        width: 100%;
-    }
-    .blog-articles article:first-child {
-        width: 100%;
-    }
-}
-
-.blog-articles article .inside-article .entry-header{
-    
-}
 .blog-articles article .inside-article .entry-header .entry-meta{
     margin-top: .5em;
 }
@@ -590,7 +503,7 @@ main .tips .six-cards-grid .six-card a h3 {
 
 
 
-/***/
+/*******/
 
 .post-page-title {
     text-align: center;
@@ -604,6 +517,9 @@ main .tips .six-cards-grid .six-card a h3 {
     align-items: center;
 
     margin: 3em 0;
+}
+.post-page-img img{
+    overflow: hidden;
 }
 
 
@@ -686,6 +602,181 @@ footer .footer-bottom span.designer {
 }
 
 
+
+
+
+
+
+/* MEDIA QUERYS */
+
+
+@media only screen and (max-width: 768px) {
+    header nav {
+        display: none;
+        
+    }
+
+    header nav.show {
+        display: contents;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        background-color: #dddddd85;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero-section .hero-content h1 {
+        font-size: 35px;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    main .lastest-post .post-card-large {
+        flex-direction: column;
+    }
+    main .lastest-post .post-card-large img {
+        width: 400px;
+    }
+    main .lastest-post .post-card-large .post-text {
+        margin: 30px;
+        max-width: 600px;
+    }
+    main .lastest-post .post-card-large .post-text h2 {
+        font-size: 30px;
+    }
+    main .lastest-post .post-card-large .post-text p {
+        margin-bottom: 20px;
+    }
+    main .lastest-post .post-card-large .post-text .rdm-btn{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:485px) {
+
+    main .lastest-post .post-card-large img {
+        width: 250px;
+    }
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    .grid-aside-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "main main"
+            "main main"
+            "main main"
+            "aside aside"
+        ;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1280px) {
+    main .countries {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "contr-one contr-two"
+            "contr-three contr-four"
+        ;
+    }
+}
+@media screen and (max-width: 720px) {
+    main .countries {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "contr-one"
+            "contr-two"
+            "contr-three"
+            "contr-four"
+        ;
+    }
+}
+
+
+
+
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (max-width: 700px) {
+    .blog-articles article {
+        width: calc(50% - 20px);
+    }
+    .blog-articles article:first-child {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Ajustes para pantallas aún más pequeñas */
+@media screen and (max-width: 500px) {
+    .blog-articles article {
+        width: 100%;
+    }
+    .blog-articles article:first-child {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:830px) {
+    .post-page-img img {
+        width: 400px;
+    }    
+}
+
+@media screen and (max-width:680px) {
+    main .tips .six-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "tip-one tip-two"
+            "tip-three tip-four"
+            "tip-five tip-six"
+        ;
+    }
+    main .tips .six-cards-grid .six-card h3 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:450px) {
+    main .tips .six-cards-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "tip-one"
+            "tip-two"
+            "tip-three"
+            "tip-four"
+            "tip-five"
+            "tip-six"
+        ;
+    }
+}
 
 
 @media screen and (max-width: 700px) {

@@ -1,160 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog - Travel With Me</title>
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="./js/script.js"></script>
-        <link rel="shortcut icon" href="./imgs/icon.ico" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Travel With Me</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <link rel="shortcut icon" href="./imgs/icon.ico" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
 
-    <body>
+<body>
 
-        <header>
-            <a href="./index.html" class="logo">Travel With Me</a>
-            <div class="menu-icon" onclick="toggleMenu()">
-                <i class="bi bi-list"></i>
+    <header>
+        <a href="./index.html" class="logo">Travel With Me</a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="bi bi-list"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/blog.html">Blog</a></li>
+                <li><a href="./pages/privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section class="hero-section">
+        <div class="hero-content animate__animated animate__fadeInUpBig">
+            <h1>Travel With Me</h1>
+            <p>Travelling around the world since 2016</p>
+        </div>
+    </section>
+
+    <main>
+
+        <section class="countries">
+            <div class="country-card contr-one">
+                <a href="./pages/countries/argentina-section.html">
+                    <img src="./imgs/teatro-colon-exterior.jpg" alt="">
+                    <h2>Argentina</h2>
+                </a>
             </div>
-            <nav >
+            <div class="country-card contr-two">
+                <a href="./pages/countries/usa-section.html">
+                    <img src="./imgs/large-size-bridge-new-york.jpg" alt="New york image for countries section">
+                    <h2>U.S.A</h2>
+                </a>
+            </div>
+            <div class="country-card contr-three">
+                <a href="./pages/countries/japan-section.html">
+                    <img src="./imgs/japan-palace.jpg" alt="">
+                    <h2>Japan</h2>
+                </a>
+
+            </div>
+            <div class="country-card contr-four">
+                <a href="./pages/countries/canada-section.html">
+                    <img src="./imgs/canada-flag.jpg" alt="">
+                    <h2>Canada</h2>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="lastest-post wrapper space-btw-sections">
+            <h2 class="lastest-post-title">LASTEST POST</h2>
+            <div class="post-card-large" data-aos="fade-up">
+                <a href="#"><img src="./imgs/large-size-bridge-new-york.jpg" alt=""></a>
+                <div class="post-text">
+                    <h2>Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim esse ullam explicabo dicta est
+                        corporis fugit maxime tempore, sequi maiores quae ducimus vero porro saepe nisi quam, quis
+                        odio placeat ipsam officia iusto obcaecati perspiciatis adipisci ratione. Ipsam, est? Esse
+                        incidunt provident beatae laboriosam fuga sunt deleniti earum itaque recusandae[...]
+                    </p>
+                    <a href="#" class="rdm-btn">Read more</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips">
+            <h2>TRAVEL TIPS</h2>
+            <div class="six-cards-grid">
+                <div class="six-card first-six-card">
+                    <img src="./imgs/tip-one.jpg" alt="">
+                    <h3>Pack light.</h3>
+                </div>
+                <div class="six-card second-six-card">
+                    <img src="./imgs/tip-two.jpg" alt="">
+                    <h3>Plan ahead.</h3>
+                </div>
+                <div class="six-card third-six-card">
+                    <img src="./imgs/tip-three.jpg" alt="">
+                    <h3>Stay flexible.</h3>
+                </div>
+                <div class="six-card fourth-six-card">
+                    <img src="./imgs/congreso.jpg" alt="">
+                    <h3>Stay connected.</h3>
+                </div>
+                <div class="six-card fifth-six-card">
+                    <img src="./imgs/dundas.jpg" alt="">
+                    <h3>Stay safe.</h3>
+                </div>
+                <div class="six-card sixth-six-card">
+                    <img src="./imgs/patagonia-mont.jpg" alt="">
+                    <h3>Enjoy the moment.</h3>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footer-nav">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./pages/about.html">About</a></li>
                     <li><a href="./pages/blog.html">Blog</a></li>
                     <li><a href="./pages/privacy.html">Privacy</a></li>
                 </ul>
-            </nav>
-
-        </header>
-        <section class="hero-section">
-            <div class="hero-content animate__animated animate__fadeInUpBig" >
-                <h1>Travel With Me</h1>
-                <h3>Travelling around the world since 2016</h3>
             </div>
-        </section>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">Alexander Muruchi</span></p>
+        </div>
+    </footer>
 
-        <main>
+    <script>
+        AOS.init();
+    </script>
 
-            <section class="countries">
-                <div class="country-card contr-one">
-                    <a href="./pages/countries/argentina-section.html">
-                        <img src="./imgs/teatro-colon-exterior.jpg" alt="">
-                        <h2>Argentina</h2>
-                    </a>
-                </div>
-                <div class="country-card contr-two">
-                    <a href="./pages/countries/usa-section.html">
-                        <img src="./imgs/large-size-bridge-new-york.jpg" alt="New york image for countries section">
-                        <h2>U.S.A</h2>
-                    </a>
-                </div>
-                <div class="country-card contr-three">
-                    <a href="./pages/countries/japan-section.html">
-                        <img src="./imgs/japan-palace.jpg" alt="">
-                        <h2>Japan</h2>
-                    </a>
-
-                </div>
-                <div class="country-card contr-four">
-                    <a href="./pages/countries/canada-section.html">
-                        <img src="./imgs/canada-flag.jpg" alt="">
-                        <h2>Canada</h2>
-                    </a>
-
-                </div>
-            </section>
-
-            <section class="lastest-post wrapper space-btw-sections">
-                <h2 class="lastest-post-title">LASTEST POST</h2>
-                <div class="post-card-large" data-aos="fade-up">
-                    <a href="#"><img src="./imgs/large-size-bridge-new-york.jpg" alt=""></a>
-                    <div class="post-text">
-                        <h2>Title</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim esse ullam explicabo dicta est
-                            corporis fugit maxime tempore, sequi maiores quae ducimus vero porro saepe nisi quam, quis
-                            odio placeat ipsam officia iusto obcaecati perspiciatis adipisci ratione. Ipsam, est? Esse
-                            incidunt provident beatae laboriosam fuga sunt deleniti earum itaque recusandae[...]
-                        </p>
-                        <a href="#" class="rdm-btn">Read more</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="tips">
-                <h2>TRAVEL TIPS</h2>
-                <div class="six-cards-grid">
-                    <div class="six-card first-six-card">
-                        <a href="#">
-                            <img src="./imgs/tip-one.jpg" alt="">
-                            <h3>Somthing that is a tip</h3>
-                        </a>
-                    </div>
-                    <div class="six-card second-six-card">
-                        <a href="#">
-                            <img src="./imgs/tip-two.jpg" alt="">
-                            <h3>Somthing that is a tip</h3>
-                        </a>
-                    </div>
-                    <div class="six-card third-six-card">
-                        <a href="#">
-                            <img src="./imgs/tip-three.jpg" alt="">
-                            <h3>Somthing that is a tip</h3>
-                        </a>
-                    </div>
-                    <div class="six-card fourth-six-card">
-                        <a href="#">
-                            <img src="./imgs/congreso.jpg" alt="">
-                            <h3>Somthing that is a tip</h3>
-                        </a>
-                    </div>
-                    <div class="six-card fifth-six-card">
-                        <a href="#">
-                            <img src="./imgs/dundas.jpg" alt="">
-                            <h3>Somthing that is a tip</h3>
-                        </a>
-                    </div>
-                    <div class="six-card sixth-six-card">
-                        <a href="#">
-                            <img src="./imgs/patagonia-mont.jpg" alt="">
-                            <h3>Somthing that is a tip</h3>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-
-        </main>
-
-        <footer>
-            <div class="footer-container">
-                <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube"></i></a>
-                </div>
-                <div class="footer-nav">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./pages/about.html">About</a></li>
-                        <li><a href="./pages/blog.html">Blog</a></li>
-                        <li><a href="./pages/privacy.html">Privacy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Copyright &copy;2024; Designed by <span class="designer">Alexander Muruchi</span></p>
-            </div>
-        </footer>
-
-        <script>
-            AOS.init();
-        </script>
-
-    </body>
+</body>
 
 </html>

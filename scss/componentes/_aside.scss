@@ -1,10 +1,32 @@
+/*--------- SIDEBAR ---------*/
+.twntypx-margin-top {
+	margin-top: 20px;
+}
 .grid-aside-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 0.8fr;
+	grid-template-areas: "main main aside" "main main aside" "main main aside";
+	gap: 20px;
+	padding: 20px;
+	.grid-aside-content {
+		grid-area: main;
+		background-color: $white-two;
+		border-radius: 5px;
+		padding: 20px;
+		ol {
+			margin-left: 30px;
+		}
+		.bg-text {
+			opacity: 0.7;
+		}
+	}
 	.sidebar {
 		grid-area: aside;
 		height: fit-content;
 		padding: 20px;
 		border: 2px #c7c7c7 solid;
 		border-radius: 5px;
+		background-color: $white;
 		.sidebar-recent-uploads {
 			.sidebar-card {
 				display: flex;
@@ -12,10 +34,10 @@
 				margin: 10px 0px;
 				padding: 0px 0px 10px 0px;
 				border-bottom: 2px #c7c7c7 solid;
-				color: #000000;
+				color: $black;
 				text-decoration: none;
 				&:hover {
-					color: var(--orange-web);
+					color: $orange-web;
 				}
 				&:last-child {
 					border-bottom: none;

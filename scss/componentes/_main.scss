@@ -1,12 +1,19 @@
-/* Estructura del main en el index */
+// /* Estructura del main en el index */
+
+
+
+/*----------- LASTEST POST _HOME PAGE -----------*/
+/*------------- TIPS _ HOME -------------*/
+/*-------- BLOG-PAGE -------*/
+/*******/
+
+
 
 main {
 	.countries {
-		height: 500px;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-areas: "contr-one contr-two contr-three contr-four"
-        "contr-one contr-two contr-three contr-four";
+		grid-template-areas: "contr-one contr-two contr-three contr-four" "contr-one contr-two contr-three contr-four";
 		.contr-one {
 			grid-area: contr-one;
 		}
@@ -20,10 +27,9 @@ main {
 			grid-area: contr-four;
 		}
 		.country-card {
-			position: relative;
 			a {
 				text-decoration: none;
-				color: var(--white);
+				color: $white;
 				img {
 					width: 100%;
 					height: 100%;
@@ -39,6 +45,7 @@ main {
 					font-size: 50px;
 				}
 			}
+			position: relative;
 			&:hover {
 				filter: brightness(80%);
 			}
@@ -55,8 +62,9 @@ main {
 			justify-content: space-between;
 			align-items: center;
 			img {
-				width: 700px;
+				width: 650px;
 				object-fit: cover;
+				overflow: hidden;
 			}
 			.post-text {
 				margin: 30px 0px 30px 30px;
@@ -70,15 +78,15 @@ main {
 				.rdm-btn {
 					padding: 10px 20px;
 					text-decoration: none;
-					background-color: var(--eerie-black);
-					color: var(--white);
-					border: 1px #161616 solid;
+					background-color: $eerie-black;
+					color: $white;
+					border: 1px $sort-of-black solid;
 					border-radius: 5px;
 					transition: .1s ease-in;
 					&:hover {
 						text-decoration: none;
-						color: var(--orange-web);
-						background-color: var(--white);
+						color: $orange-web;
+						background-color: $white;
 					}
 				}
 			}
@@ -93,8 +101,7 @@ main {
 		.six-cards-grid {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			grid-template-areas: "tip-one tip-two tip-three"
-        "tip-four tip-five tip-six";
+			grid-template-areas: "tip-one tip-two tip-three" "tip-four tip-five tip-six";
 			.first-six-card {
 				grid-area: tip-one;
 			}
@@ -116,53 +123,138 @@ main {
 			.six-card {
 				position: relative;
 				&:hover {
-					filter: brightness(80%);
-				}
-				a {
 					img {
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
-						overflow: hidden;
-						filter: brightness(50%);
+						filter: brightness(40%);
 					}
-					h3 {
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-						font-size: 30px;
-						color: var(--white);
-					}
+				}
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					overflow: hidden;
+					filter: brightness(50%);
+				}
+				h3 {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					font-size: 30px;
+					color: $white;
 				}
 			}
 		}
 	}
 }
-
-/*lo de abajo vendría a ser el de main de las otras páginas ya que las demas 
-tienen una estructura diferente que la del index. No estan dentro de un main, sino
-que un div (grid-aside-container) encapsula al main y a un aside*/
-
-.grid-aside-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 0.8fr;
-	grid-template-areas: "main main aside"
-        "main main aside"
-        "main main aside";
-	gap: 20px;
-	padding: 20px;
-	.grid-aside-content {
-		grid-area: main;
-		background-color: #f7f7f7;
-		border-radius: 5px;
-		text-align: justify;
-		padding: 20px;
-		ol {
-			margin-left: 30px;
+.blog-articles {
+	article {
+		.inside-article {
+			.post-image {
+				a {
+					img {
+						width: 100%;
+					}
+				}
+			}
+			.entry-header {
+				.entry-meta {
+					margin-top: .5em;
+					.posted-on {
+						color: #595959;
+					}
+				}
+				.entry-title {
+					a {
+						text-decoration: none;
+						color: $black;
+						transition: .1s ease-in;
+						&:hover {
+							color: $orange-web;
+						}
+					}
+				}
+			}
+			.entry-summary {
+				margin-top: .5em;
+				p {
+					a {
+						text-decoration: none;
+						color: $orange-web;
+						transition: .1s ease-in;
+						&:hover {
+							color: $black;
+						}
+					}
+				}
+			}
 		}
-		.bg-text {
-			opacity: 0.7;
+		width: calc(33.33% - 20px);
+		margin-bottom: 20px;
+		box-sizing: border-box;
+		&:first-child {
+			width: calc(66.66% - 20px);
+		}
+	}
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.post-page-title {
+	text-align: center;
+	h2 {
+		margin-top: .5em;
+	}
+}
+.post-page-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3em 0;
+	img {
+		overflow: hidden;
+	}
+}
+
+// Heros de otras páginas
+
+.about-hero-section, .blog-hero-section, .privacy-hero-section .hero-content h1 {
+    color: $white;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+}
+
+.privacy-hero-section {
+	.hero-content {
+		h3 {
+			color: $white;
+		}
+	}
+}
+
+.blog-hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/blog-hero.jpg");
+    @extend %banners-configs;
+}
+
+.privacy-hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/tip-one.jpg");
+    @extend %banners-configs;
+}
+
+.about-hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../imgs/hero.jpg");
+    @extend %banners-configs;
+}
+
+
+.hero-section {
+	@extend %hero-section;
+	.hero-content {
+		color: $white;
+		line-height: 50px;
+		h1 {
+			font-family: 'Franklin Gothic Medium';
+			font-size: 50px;
 		}
 	}
 }

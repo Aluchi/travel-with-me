@@ -1,3 +1,5 @@
+/*--------- FOOTER --------*/
+/* Hover effects on social media icons*/
 footer {
 	background-color: #111;
 	.footer-container {
@@ -9,19 +11,19 @@ footer {
 			a {
 				text-decoration: none;
 				padding: 10px;
-				background-color: var(--white);
+				background-color: $white;
 				margin: 10px;
 				border-radius: 50%;
 				transition: 0.5s;
 				i {
 					font-size: 2em;
-					color: #000000;
+					color: $black;
 					opacity: 0.9;
 				}
 				&:hover {
 					background-color: #111;
 					i {
-						color: var(--white);
+						color: $white;
 						transition: 0.5s;
 					}
 				}
@@ -35,7 +37,7 @@ footer {
 				list-style-type: none;
 				li {
 					a {
-						color: var(--white);
+						color: $white;
 						margin: 20px;
 						text-decoration: none;
 						opacity: 0.7;
@@ -49,20 +51,18 @@ footer {
 		}
 	}
 	.footer-bottom {
-		background-color: #000000;
+		background-color: $black;
 		padding: 20px;
 		text-align: center;
 		p {
-			color: var(--white);
+			color: $white;
 		}
-		span {
-			&.designer {
-				opacity: 0.7;
-				text-transform: uppercase;
-				letter-spacing: 1px;
-				font-weight: 400;
-				margin: 0px 5px;
-			}
+		span.designer {
+			opacity: 0.7;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 400;
+			margin: 0px 5px;
 		}
 	}
 }
