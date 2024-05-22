@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Travel With Me</title>
-    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./js/script.js"></script>
     <link rel="shortcut icon" href="./imgs/icon.ico" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -39,83 +38,90 @@
     </section>
 
     <main>
-
-        <section class="countries">
-            <div class="country-card contr-one">
-                <a href="./pages/countries/argentina-section.html">
-                    <img src="./imgs/teatro-colon-exterior.jpg" alt="">
-                    <h2>Argentina</h2>
-                </a>
-            </div>
-            <div class="country-card contr-two">
-                <a href="./pages/countries/usa-section.html">
-                    <img src="./imgs/large-size-bridge-new-york.jpg" alt="New york image for countries section">
-                    <h2>U.S.A</h2>
-                </a>
-            </div>
-            <div class="country-card contr-three">
-                <a href="./pages/countries/japan-section.html">
-                    <img src="./imgs/japan-palace.jpg" alt="">
-                    <h2>Japan</h2>
-                </a>
-
-            </div>
-            <div class="country-card contr-four">
-                <a href="./pages/countries/canada-section.html">
-                    <img src="./imgs/canada-flag.jpg" alt="">
-                    <h2>Canada</h2>
-                </a>
-
-            </div>
+        <section class="sections-container">
+            <button class="section-btn argentina-section-btn">
+                <img src="./imgs/large-arg-flag.jpg" alt="Argentina">
+                <span>Argentina</span>
+            </button>
+            <button class="section-btn usa-section-btn">
+                <img src="./imgs/usa-flag.jpg" alt="USA">
+                <span>USA</span>
+            </button>
+            <button class="section-btn japan-section-btn">
+                <img src="./imgs/japan-flag.jpg" alt="Japan">
+                <span>Japan</span>
+            </button>
+            <button class="section-btn canada-section-btn">
+                <img src="./imgs/large-canada-flag.jpg" alt="Canada">
+                <span>Canada</span>
+            </button>
         </section>
 
-        <section class="lastest-post wrapper space-btw-sections">
-            <h2 class="lastest-post-title">LASTEST POST</h2>
-            <div class="post-card-large" data-aos="fade-up">
-                <a href="#"><img src="./imgs/large-size-bridge-new-york.jpg" alt=""></a>
-                <div class="post-text">
-                    <h2>Title</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim esse ullam explicabo dicta est
-                        corporis fugit maxime tempore, sequi maiores quae ducimus vero porro saepe nisi quam, quis
-                        odio placeat ipsam officia iusto obcaecati perspiciatis adipisci ratione. Ipsam, est? Esse
-                        incidunt provident beatae laboriosam fuga sunt deleniti earum itaque recusandae[...]
+        <section class="best-post-container wrapper" id="best-post-container">
+            <h2 class="title">Recomended post</h2>
+
+        </section>
+        <section class="testimonial-cards-container">
+            <!---------------------------------------------------------->
+            <div class="testimonial-card">
+                <div class="info-testimonial">
+                    <img src="./imgs/comillas.svg" alt="comillas">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt ab nam iure, voluptate
+                        assumenda perspiciatis! Hic asperiores, nemo recusandae, fugit repudiandae officia repellat,
+                        aperiam quod amet repellendus error iste?
                     </p>
-                    <a href="#" class="rdm-btn">Read more</a>
+                </div>
+                <div class="profile">
+                    <img src="./imgs/gibli.jpg" alt="Totoro plush">
+                    <h4>Alexander Muruchi</h4>
+                    <p>User</p>
                 </div>
             </div>
-        </section>
-
-        <section class="tips">
-            <h2>TRAVEL TIPS</h2>
-            <div class="six-cards-grid">
-                <div class="six-card first-six-card">
-                    <img src="./imgs/tip-one.jpg" alt="">
-                    <h3>Pack light.</h3>
+            <!---------------------------------------------------------->
+            <div class="testimonial-card">
+                <div class="info-testimonial">
+                    <img src="./imgs/comillas.svg" alt="comillas">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt ab nam iure, voluptate
+                        assumenda perspiciatis! Hic asperiores, nemo recusandae, fugit repudiandae officia repellat,
+                        aperiam quod amet repellendus error iste?
+                    </p>
                 </div>
-                <div class="six-card second-six-card">
-                    <img src="./imgs/tip-two.jpg" alt="">
-                    <h3>Plan ahead.</h3>
-                </div>
-                <div class="six-card third-six-card">
-                    <img src="./imgs/tip-three.jpg" alt="">
-                    <h3>Stay flexible.</h3>
-                </div>
-                <div class="six-card fourth-six-card">
-                    <img src="./imgs/congreso.jpg" alt="">
-                    <h3>Stay connected.</h3>
-                </div>
-                <div class="six-card fifth-six-card">
-                    <img src="./imgs/dundas.jpg" alt="">
-                    <h3>Stay safe.</h3>
-                </div>
-                <div class="six-card sixth-six-card">
-                    <img src="./imgs/patagonia-mont.jpg" alt="">
-                    <h3>Enjoy the moment.</h3>
+                <div class="profile">
+                    <img src="./imgs/club-penguin.gif" alt="Dancing Penguin">
+                    <h4>Glitched Penguin</h4>
+                    <p>User</p>
                 </div>
             </div>
+            <!---------------------------------------------------------->
+            <div class="testimonial-card">
+                <div class="info-testimonial">
+                    <img src="./imgs/comillas.svg" alt="comillas">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt ab nam iure, voluptate
+                        assumenda perspiciatis! Hic asperiores, nemo recusandae, fugit repudiandae officia repellat,
+                        aperiam quod amet repellendus error iste?
+                    </p>
+                </div>
+                <div class="profile">
+                    <img src="./imgs/roca.jpg" alt="Argentino Roca">
+                    <h4>The Patriot</h4>
+                    <p>User</p>
+                </div>
+            </div>
+            <!---------------------------------------------------------->
         </section>
 
-
+        <section class="gallery-container">
+            <div class="gallery-content">
+                <img src="./imgs/tip-one.jpg" alt="Coffee and a laptop">
+                <img src="./imgs/tip-two.jpg" alt="Old books">
+                <img src="./imgs/tip-three.jpg" alt="Mount Fuji">
+                <img src="./imgs/sakura.jpg" alt="Sakura">
+                <img src="./imgs/congreso.jpg" alt="Congress of Argentina">
+                <img src="./imgs/patagonia-mont.jpg" alt="Patagonia Mountains">
+                <img src="./imgs/patagonia-naturaleza.jpg" alt="Patagonia Nature">
+                <img src="./imgs/obelisco.jpg" alt="Obelisco - Captial Federal">
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -142,7 +148,8 @@
     <script>
         AOS.init();
     </script>
-
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script src="../js/header.js"></script>
 </body>
 
 </html>

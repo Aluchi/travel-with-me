@@ -4,10 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About - Travel With Me</title>
+        <title>Blog - Travel With Me</title>
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="../imgs/icon.ico" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 
@@ -20,7 +22,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./privacy.html">Privacy</a></li>
@@ -28,38 +30,18 @@
             </nav>
 
         </header>
-        <section class="about-hero-section">
-            <div class="hero-content animate__animated animate__bounce">
-                <h1>ABOUT ME</h1>
+
+        <section class="blog-hero-section">
+            <div class="hero-content animate__animated animate__tada">
+                <h1>BLOG</h1>
             </div>
         </section>
 
         <div class="grid-aside-container wrapper">
             <main class="grid-aside-content">
-                
-                <h2 class="mb-20">🌐 Greetings, Fellow Voyagers! Welcome to "Travel with Me" 🌐</h2>
-
-                <p>
-                    Salutations, intrepid souls, and a warm welcome to "Travel with Me," where the allure of exploration and
-                    cultural immersion intertwines. I am Marcus, the navigator of this virtual odyssey, and I extend an earnest
-                    invitation for you to accompany me on an expedition through Argentina, the U.S.A, Japan, and Canada.
-                    <br><br>
-
-                    In the realm of meaningful travel, my sojourns are meticulously crafted to encapsulate the essence of each
-                    destination. As we embark on this refined exploration, anticipate a narrative that transcends the
-                    conventional, weaving together the threads of culture, history, and the natural wonders that define these
-                    countries.
-                    <br><br>
-
-                    Throughout "Travel with Me," I aim to unfold the tapestry of my global encounters, inviting you to traverse
-                    the landscapes of diverse cultures and landscapes. Join me on this eloquent expedition, where the pursuit of
-                    connection and the celebration of diversity are paramount.
-                    <br><br>
-
-                    Embark with curiosity and an open heart,
-                    Marcus 🌍
-                </p>
-
+                <section class="blog-articles" id="specific-posts-container" data-section="Argentina">
+                    <!---------CONTENT LOADED DYNAMICALLY------------->
+                </section>
             </main>
             <aside class="sidebar">
                 <section class="sidebar-search">
@@ -87,12 +69,11 @@
                     <h3>RECENT UPLOADS</h3>
 
                     <div class="sidebar-cards-container" id="sidebar-posts">
-                        <!----------------------->
+                        <!------------------->
                     </div>
 
                 </section>
             </aside>
-
         </div>
 
 
@@ -117,9 +98,13 @@
             </div>
         </footer>
 
+
+        <script>
+            AOS.init();
+        </script>
         <script src="../js/header.js"></script>
         <script src="../js/generalities.js"></script>
-
+        <script src="../js/section.js"></script>
     </body>
 
 </html>
