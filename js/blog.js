@@ -1,7 +1,7 @@
 const blogArticlesInBlogPage = document.querySelector("#blog-articles");
 
 function loadBlog() {
-    fetch("../posts.json")
+    fetch("https://raw.githubusercontent.com/Aluchi/travel-with-me/master/posts.json")
         .then((res) => {
             return res.json();
         })

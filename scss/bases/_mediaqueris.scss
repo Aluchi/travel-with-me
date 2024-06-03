@@ -1,30 +1,24 @@
 /* MEDIA QUERYS */
-/* Ajustes para pantallas más pequeñas */
-/* Ajustes para pantallas aún más pequeñas */
 @media only screen and (max-width: 768px) {
 	header {
 		nav {
 			display: none;
+		}
+		.nav-active {
 			ul {
 				display: flex;
 				flex-direction: column;
-				text-align: center;
-				width: 100%;
-				position: absolute;
-				background-color: #dddddd85;
-				top: 60px;
-				left: 0;
+				justify-content: center;
+				align-items: center;
+				gap: 20px;
 				z-index: 10;
-				li {
-					margin: 10px 0;
-				}
 			}
-		}
-		nav.show {
-			display: contents;
 		}
 	}
 	.menu-icon {
+		display: block;
+	}
+	.btn-cerrar {
 		display: block;
 	}
 }
@@ -37,77 +31,14 @@
 		}
 	}
 }
-@media screen and (max-width:1200px) {
-	main {
-		.lastest-post {
-			.post-card-large {
-				flex-direction: column;
-				img {
-					width: 400px;
-				}
-				.post-text {
-					margin: 30px;
-					max-width: 600px;
-					h2 {
-						font-size: 30px;
-					}
-					p {
-						margin-bottom: 20px;
-					}
-					.rdm-btn {
-						font-size: 15px;
-					}
-				}
-			}
-		}
-	}
-}
-@media screen and (max-width:485px) {
-	main {
-		.lastest-post {
-			.post-card-large {
-				img {
-					width: 250px;
-				}
-			}
-		}
-	}
-}
 @media screen and (max-width: 1100px) {
 	.grid-aside-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "main main" "main main" "main main" "aside aside";
-		gap: 20px;
-		padding: 20px;
-	}
-}
-@media screen and (max-width: 1280px) {
-	main {
-		.countries {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			grid-template-areas: "contr-one contr-two" "contr-three contr-four";
-		}
-	}
-}
-@media screen and (max-width: 720px) {
-	main {
-		.countries {
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-template-areas: "contr-one" "contr-two" "contr-three" "contr-four";
-		}
+		grid-template-columns: 1fr;
 	}
 }
 @media screen and (max-width: 700px) {
-	.blog-articles {
-		article {
-			width: calc(50% - 20px);
-			&:first-child {
-				width: calc(100% - 20px);
-			}
-		}
+	.sections-container {
+		grid-template-columns: repeat(2, 1fr);
 	}
 	footer {
 		.footer-container {
@@ -124,47 +55,100 @@
 		}
 	}
 }
-@media screen and (max-width: 500px) {
-	.blog-articles {
-		article {
-			width: 100%;
-			&:first-child {
-				width: 100%;
+@media screen and (max-width: 1453px) {
+	.best-post-container {
+		.post-content {
+			img {
+				width: 500px;
+			}
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			gap: 20px;
+			.best-post-content {
+				width: 70%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				justify-content: center;
+				gap: 10px;
 			}
 		}
 	}
 }
-@media screen and (max-width:830px) {
-	.post-page-img {
-		img {
-			width: 400px;
+@media screen and (max-width: 610px) {
+	.best-post-container {
+		.post-content {
+			img {
+				width: 300px;
+			}
 		}
 	}
 }
-@media screen and (max-width:680px) {
-	main {
-		.tips {
-			.six-cards-grid {
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-				grid-template-areas: "tip-one tip-two" "tip-three tip-four" "tip-five tip-six";
-				.six-card {
-					h3 {
-						font-size: 25px;
+@media screen and (max-width: 415px) {
+	.best-post-container {
+		.post-content {
+			.best-post-content {
+				h2 {
+					font-size: 20px;
+				}
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1200px) {
+	.testimonial-cards-container {
+		flex-direction: column;
+	}
+	.testimonial-card {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.testimonial-card {
+		width: 80%;
+	}
+	.gallery-content {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 650px) {
+	.blog-articles {
+		article {
+			.inside-article {
+				.entry-header {
+					.entry-title-container {
+						h2 {
+							font-size: 18px;
+						}
+					}
+				}
+				.entry-summary {
+					p {
+						font-size: 14px;
 					}
 				}
 			}
 		}
 	}
 }
-@media screen and (max-width:450px) {
-	main {
-		.tips {
-			.six-cards-grid {
-				display: grid;
-				grid-template-columns: 1fr;
-				grid-template-areas: "tip-one" "tip-two" "tip-three" "tip-four" "tip-five" "tip-six";
+@media screen and (max-width: 750px) {
+	.blog-articles {
+		article {
+			&:first-child {
+				grid-column: span 3;
 			}
+			grid-column: span 3;
 		}
+	}
+}
+@media screen and (max-width: 726px) {
+	.post-page-img {
+		width: 300px;
 	}
 }

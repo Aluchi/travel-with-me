@@ -1,7 +1,7 @@
 const sidebarPosts = document.querySelector("#sidebar-posts");
 
 function loadSidebarPosts(){
-    fetch("../posts.json")
+    fetch("https://raw.githubusercontent.com/Aluchi/travel-with-me/master/posts.json")
     .then((res) => {
         return res.json();
     })

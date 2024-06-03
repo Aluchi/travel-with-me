@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Travel With Me</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
     <script src="https://kit.fontawesome.com/ff6b388088.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./imgs/icon.ico" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -14,13 +14,19 @@
 </head>
 
 <body>
-
+    <div class="overlay"></div>
     <header>
         <a href="./index.html" class="logo">Travel With Me</a>
-        <div class="menu-icon" onclick="toggleMenu()">
+        <button class="menu-icon" id="menu-btn">
             <i class="bi bi-list"></i>
-        </div>
+        </button>
         <nav>
+            <div class="btn-cerrar-container">
+                <button class="btn-cerrar" id="btn-cerrar">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+            
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./pages/about.html">About</a></li>
@@ -66,9 +72,7 @@
             <div class="testimonial-card">
                 <div class="info-testimonial">
                     <img src="./imgs/comillas.svg" alt="comillas">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt ab nam iure, voluptate
-                        assumenda perspiciatis! Hic asperiores, nemo recusandae, fugit repudiandae officia repellat,
-                        aperiam quod amet repellendus error iste?
+                    <p>This is my website, by the way.
                     </p>
                 </div>
                 <div class="profile">
@@ -81,9 +85,7 @@
             <div class="testimonial-card">
                 <div class="info-testimonial">
                     <img src="./imgs/comillas.svg" alt="comillas">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt ab nam iure, voluptate
-                        assumenda perspiciatis! Hic asperiores, nemo recusandae, fugit repudiandae officia repellat,
-                        aperiam quod amet repellendus error iste?
+                    <p>I loved your post named "5 places to visit in Argentina"
                     </p>
                 </div>
                 <div class="profile">
@@ -96,9 +98,7 @@
             <div class="testimonial-card">
                 <div class="info-testimonial">
                     <img src="./imgs/comillas.svg" alt="comillas">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt ab nam iure, voluptate
-                        assumenda perspiciatis! Hic asperiores, nemo recusandae, fugit repudiandae officia repellat,
-                        aperiam quod amet repellendus error iste?
+                    <p>Good content!
                     </p>
                 </div>
                 <div class="profile">
@@ -149,7 +149,7 @@
         AOS.init();
     </script>
     <script type="text/javascript" src="./js/script.js"></script>
-    <script src="../js/header.js"></script>
+    <script type="text/javascript" src="./js/header.js"></script>
 </body>
 
 </html>

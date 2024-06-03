@@ -13,24 +13,21 @@ function loadPost() {
         return;
     }
 
-    fetch("../posts.json")
+    fetch("https://raw.githubusercontent.com/Aluchi/travel-with-me/master/posts.json")
         .then(res => res.json())
         .then(data => {
             const post = data.find(p => p.title === postTitle);
             if (post) {
                 document.querySelector('#post-content').innerHTML = `
+                <div class="post-page-header">
                     <div class="post-page-title">
                         <span>${post.datetime}</span>
                         <h2>${post.title}</h2>
                     </div>
 
-                    <div class="post-page-img">
-                        <img src="${post.img}" alt="${post.title}">
-                    </div>
-
-                    <div>
-                        ${post.content}
-                    </div>
+                    <img class="post-page-img" src="${post.img}" alt="${post.title}">
+                </div>
+                ${post.content}
                 `;
             } else {
                 document.querySelector('#post-content').innerText = 'Post not found.';

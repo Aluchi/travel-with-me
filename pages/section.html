@@ -14,13 +14,19 @@
     </head>
 
     <body>
+        <div class="overlay"></div>
 
         <header>
             <a href="../index.html" class="logo">Travel With Me</a>
-            <div class="menu-icon" onclick="toggleMenu()">
+            <button class="menu-icon" id="menu-btn">
                 <i class="bi bi-list"></i>
-            </div>
+            </button>
             <nav>
+                <div class="btn-cerrar-container">
+                    <button class="btn-cerrar" id="btn-cerrar">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </div>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>

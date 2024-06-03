@@ -11,19 +11,20 @@ footer {
 			a {
 				text-decoration: none;
 				padding: 10px;
-				background-color: $white;
+				background-color: var(--white);
+				color: var(--black);
 				margin: 10px;
 				border-radius: 50%;
 				transition: 0.5s;
 				i {
 					font-size: 2em;
-					color: $black;
+					color: var(--black);
 					opacity: 0.9;
 				}
 				&:hover {
 					background-color: #111;
 					i {
-						color: $white;
+						color: var(--white);
 						transition: 0.5s;
 					}
 				}
@@ -37,7 +38,7 @@ footer {
 				list-style-type: none;
 				li {
 					a {
-						color: $white;
+						color: var(--white);
 						margin: 20px;
 						text-decoration: none;
 						opacity: 0.7;
@@ -51,11 +52,11 @@ footer {
 		}
 	}
 	.footer-bottom {
-		background-color: $black;
+		background-color: var(--black);
 		padding: 20px;
 		text-align: center;
 		p {
-			color: $white;
+			color: var(--white);
 		}
 		span.designer {
 			opacity: 0.7;

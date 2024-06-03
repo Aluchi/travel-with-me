@@ -29,7 +29,7 @@ canadaSectionBtn.forEach((button) => {
 /////////////////////////
 const bestPostContainer = document.querySelector("#best-post-container");
 function loadBestPost() {
-    fetch("../posts.json")
+    fetch("https://raw.githubusercontent.com/Aluchi/travel-with-me/master/posts.json")
         .then(res => res.json())
         .then(data => {
             const bestPost = data.find(bp => bp.recomended === true);
@@ -37,7 +37,7 @@ function loadBestPost() {
                 const div = document.createElement("div");
                 div.classList.add("post-content")
                 div.innerHTML = `
-                    <img src="${bestPost.img}" alt="${bestPost.title}">
+                    <img src="${bestPost.best_post_img}" alt="${bestPost.title}">
                     <div class="best-post-content">
                         <h2>${bestPost.title}</h2>
                         <p>${bestPost.preview}</p>

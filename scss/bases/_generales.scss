@@ -1,28 +1,71 @@
-
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-	font-family: 'DM Sans', sans-serif;
-	font-style: normal;
-	text-transform: none;
-	line-height: 28px;
-	letter-spacing: 0;
-	color: $sort-of-black;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    text-transform: none;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: #161616;
 }
+
+
 .wrapper {
-	width: 90%;
-	max-width: 1400px;
-	margin: auto;
-	overflow: hidden;
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
 }
+
 .space-btw-sections {
-	margin: 90px auto;
+    margin: 90px auto;
+}
+
+:root {
+    /* CSS HEX */
+    --orange-web: #faa916ff;
+    --white: #fbfffeff;
+    --white-two: #f7f7f7;
+    --dim-gray: #6d676eff;
+    --eerie-black: #41444B;
+	--other-gray: #4b4b4b;
+    --carmine: #96031aff;
+    --black: #000;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none; 
+}
+  
+.overlay.active {
+    display: block; 
 }

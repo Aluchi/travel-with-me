@@ -3,7 +3,7 @@ const blogArticlesInSectionPage = document.querySelector("#specific-posts-contai
 function loadSectionBlog() {
     const section = getSectionFromUrl();
 
-    fetch("../posts.json")
+    fetch("https://raw.githubusercontent.com/Aluchi/travel-with-me/master/posts.json")
         .then((res) => res.json())
         .then((data) => {
             const filteredPosts = data.filter(post => post.section === section);
